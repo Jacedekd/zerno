@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЭФКО</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/hamburgers.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -14,22 +16,23 @@
     <div class="wrapper">
         <div class="toolbar__container">
             <div class="toolbar">
-                <div class="toolbar__logo">
-                    <img src="./assets/img/logo.svg" alt="">
+                <div class="toolbar__logo" data-aos="fade-right">
+                    <img src="./assets/img/logo.png" alt="">
                 </div>
                 <div class="hamburger_menu">
 
                     <ul class="toolbar__menu">
-                        <li class="li"><a class="a_active" href="/">ГЛАВНАЯ</a></li>
-                        <li class="li"><a href="./products.html">ПРОДУКЦИЯ</a></li>
-                        <li class="li"><a href="#rawmaterial">ЗАКУПКА СЫРЬЯ</a></li>
-                        <li class="li"><a href="./aboutUs.html">О НАС</a></li>
-                        <li class="li"><a href="./vacancies.html">ВАКАНСИИ</a></li>
-                        <li class="li"><a href="./news.html">НОВОСТИ</a></li>
-                        <li class="li"><a href="./contacts.html">КОНТАКТЫ</a></li>
+                        <li data-aos="fade-down" class="li"><a class="a_active" href="/">ГЛАВНАЯ</a></li>
+                        <li data-aos="fade-down" class="li"><a href="./products.html">ПРОДУКЦИЯ</a></li>
+                        <li data-aos="fade-down" class="li"><a href="#rawmaterial">ЗАКУПКА СЫРЬЯ</a></li>
+                        <li data-aos="fade-down" class="li"><a href="./aboutUs.html">О НАС</a></li>
+                        <li data-aos="fade-down" class="li"><a href="./vacancies.html">ВАКАНСИИ</a></li>
+                        <li data-aos="fade-down" class="li"><a href="./news.html">НОВОСТИ</a></li>
+                        <li data-aos="fade-down" class="li"><a href="./contacts.html">КОНТАКТЫ</a></li>
                     </ul>
-                    <div class="toolbar__phone">
+                    <div class="toolbar__phone" data-aos="fade-left">
                         <img src="./assets/img/toolbar__phone.svg" alt="">
+                        <div class="toolbar__PhoneDropdown">+996558381731</div>
                     </div>
                 </div>
                 <button class="hamburger hamburger--collapse" type="button">
@@ -99,15 +102,16 @@
             </div>
         </div>
         <div class="career">
-            <div class="career__title">Карьера в ЭФКО</div>
+            <div class="career__title" data-aos="zoom-in">Карьера в ЭФКО</div>
             <div class="career__Block">
                 <div class="career__Mainline">
                     <div class="career__firstLine">
-                        <div class="firstLine__Text">Присоединяйся в нашу команду проффесионалов</div>
+                        <div class="firstLine__Text" data-aos="fade-left">Присоединяйся в нашу команду проффесионалов
+                        </div>
                     </div>
                     <div class="career__secondLine">
-                        <div class="secondLine__Text">Почему у нас классно работать?</div>
-                        <div class="career__secondLineItem">
+                        <div class="secondLine__Text" data-aos="fade-right">Почему у нас классно работать?</div>
+                        <div class="career__secondLineItem" data-aos="fade-right">
                             <div class="lineblock">
                                 <img src="./assets/img/avatar1.png" alt="">
                                 <div class="linetext_1 l1">
@@ -117,7 +121,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="career__secondLineItem" style="height: 10px">
+                        <div class="career__secondLineItem" data-aos="fade-right" style="height: 10px">
                             <div class="lineblock">
                                 <img src="./assets/img/avatar2.png" alt="">
                                 <div class="linetext_2" style="width: 200px">
@@ -127,8 +131,8 @@
                         </div>
                     </div>
                     <div class="career__thirdLine">
-                        <div class="thirdLine__Text">ЭФКО выбирают за:</div>
-                        <div class="career__thirdLineItem">
+                        <div class="thirdLine__Text" data-aos="fade-left">ЭФКО выбирают за:</div>
+                        <div class="career__thirdLineItem" data-aos="fade-left">
                             <div class="lineblock3">
                                 <img src="./assets/img/avatar3.png" alt="">
                                 <div class="linetext_1 lt3">
@@ -156,9 +160,9 @@
                         </div>
                     </div>
                     <div class="career__fourthLine">
-                        <div class="fourthLine__Text">Проводим тренинги и обучения</div>
+                        <div class="fourthLine__Text" data-aos="fade-right">Проводим тренинги и обучения</div>
                     </div>
-                    <div class="career__fifthLine">
+                    <div class="career__fifthLine" data-aos="fade-right">
                         <div>+100 вакансий</div>
                     </div>
                     <a href="#" class="careerBtn">Вакансии</a>
@@ -168,47 +172,117 @@
         <div class="products">
             <div class="flipCard">
                 <div class="flipCard__container">
-                    <div class="flipCard__slide flip_active" style="background: #212121;">
-                        <div class="flipCard__slideTitle">Миссия</div>
+                    <div class="flipCard__slide flip_active" style="background: 
+                    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url(./assets/img/mission2.jpeg);">
+                        <div class="flipCard__slideTitle">Продукция</div>
 
-                        <div class="flipCard__slideDesc">Большая идея превращает бизнес в удивительное приключение.
-                            Это не просто фраза для нас. Это наш взгляд на жизнь. Участие в глобальных развивающих
-                            проектах,
-                            целью
-                            которых является улучшение качества жизни людей и сохранение нашей планеты, – то, что
-                            позволяет
-                            нам
-                            мыслить
-                            масштабно, предлагать и реализовывать принципиально новые идеи.
-                            То, что наполняет бизнес смыслом, а работу делает удивительным приключением</div>
+                        <div class="flipCard__slideDesc">Экспортируем продукцию переработки сои и рапса в Узбекистан, Таджикистан, Киргизию, Китай</div>
                     </div>
-                    <div class="flipCard__slide flipJs flip2_1"></div>
+                    <div class="flipCard__slide flipJs flip2_1"
+                        data-url="https://atlassoft.site/shrot/public/products/1"
+                        style="background-image: url(./assets/img/product_1.png);" data-name="ШРОТ И МАСЛО"> </div>
 
-                    <div class="flipCard__slide flipJs modeY flip2_2"></div>
+                    <div class="flipCard__slide flipJs modeY flip2_2"
+                        data-url="https://atlassoft.site/shrot/public/products/6"
+                        style="background-image: url(./assets/img/product_2.png);" data-name="МАСЛО И ШРОТ"> </div>
 
-                    <div class="flipCard__slide flipJs flip2_3"></div>
+                    <div class="flipCard__slide flipJs flip2_3"
+                        data-url="https://atlassoft.site/shrot/public/products/7"
+                        style="background-image: url(./assets/img/product_3.png);" data-name="ШРОТ И МАСЛО"> </div>
 
                 </div>
             </div>
             <div class="products__Block">
-                <div class="products__BlockItem"><img src="./assets/img/productBlock1.png" alt=""></div>
-                <div class="products__BlockItem"><img src="./assets/img/productBlock2.png" alt=""></div>
-                <div class="products__BlockItem"><img src="./assets/img/productBlock3.png" alt=""></div>
-                <div class="products__BlockItem"><img src="./assets/img/productBlock4.png" alt=""></div>
+                <div class="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem"><img src="./assets/img/productBlock1.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem"><img src="./assets/img/productBlock1.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem"><img src="./assets/img/productBlock1.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem"><img src="./assets/img/productBlock1.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="castom-button-prev"></div>
+                    <div class="castom-button-next"></div>
+                </div>
+            </div>
+            <div class="products__Block">
+                <div class="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem">
+                                <img src="./assets/img/productBlock2.png" alt="">
+                                <p>МАСЛО РАПСОВОЕ</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem">
+                                <img src="./assets/img/productBlock2.png" alt="">
+                                <p>МАСЛО РАПСОВОЕ</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem">
+                                <img src="./assets/img/productBlock2.png" alt="">
+                                <p>МАСЛО РАПСОВОЕ</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem">
+                                <img src="./assets/img/productBlock2.png" alt="">
+                                <p>МАСЛО РАПСОВОЕ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="castom-button-prev"></div>
+                    <div class="castom-button-next"></div>
+                </div>
+            </div>
+            <div class="products__Block">
+                <div class="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem"><img src="./assets/img/productBlock3.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem"><img src="./assets/img/productBlock3.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem"><img src="./assets/img/productBlock3.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="products__BlockItem"><img src="./assets/img/productBlock3.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="castom-button-prev"></div>
+                    <div class="castom-button-next"></div>
+                </div>
             </div>
             <div class="product__video">
-                <img src="./assets/img/product_video.png" alt="">
+                <div class="product__videoBlock">
+                    <img src="./assets/img/privy.png" alt="">
+                    <div class="product__videoImg"></div>
+                </div>
                 <div class="product__video__Modal">
                     <div class="product__video__Modal__Overlay"></div>
 
                     <div class="product__video__Modal_Body">
-                    
-                        <iframe src="https://www.youtube.com/embed/DnewVhYNt-I" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+
+                        <iframe width="966" height="543" src="https://www.youtube.com/embed/lb8dl4KSLSo"
+                            title="ЭФКО АЛМАТЫ. Эффективное кормление КРС и птиц: инструкция по применению"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </div>
-                    </div>
-                
+                </div>
+
 
             </div>
         </div>
@@ -295,7 +369,13 @@
         </footer>
     </div>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
